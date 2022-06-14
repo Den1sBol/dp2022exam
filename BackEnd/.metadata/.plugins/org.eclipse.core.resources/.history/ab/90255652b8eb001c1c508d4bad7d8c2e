@@ -1,0 +1,13 @@
+package exam.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import exam.entity1.User;
+
+//@RepositoryRestResource(collectionResourceRel = "user1", path = "user")
+public interface repositoryInt extends JpaRepository<User, Integer> {
+
+  //List<user> findByLastName(@Param("name") String name);
+
+}
